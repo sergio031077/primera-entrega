@@ -1,77 +1,107 @@
 
  
-
  /*reset*/
+ 
 * {  margin: 0;
    padding: 0;
    box-sizing: border-box;
-} 
+ }
+ 
 
  /* estilos generales*/
 
- 
  body {
-   
-    background-color: cadetblue;
+   background-color: cadetblue;
  }
- footer {
+ 
+/* estilos de footer*/
 
-   text-align: center;
- }
- .lista{
-   list-style-type: none; 
- }
+ footer {
+  text-align: center;
+}
 
 
  /* estilos index*/
   
- 
  h1{
     color: rgb(35, 35, 228); background-color: rgb(171, 201, 110); text-align: center;
 
  }
  
+ header nav img{
+   width: 100%;
+ list-style: none;
  
- .crema {
-    background-color:rgb(245,245,220) ;
- }
- .beige {color: black;background-color: beige;}
- 
-   
+  }
+  main img{
+    width: 30%;
+    margin: 5% 2% 5% 12%;
+    
+  }
 
-/* estilos servicios*/
-section div img{
+  
+/* Estilos mobile*/
+
+
+  /*estilo de tienda*/
+  .contenedor{
+    width: 80%;
+    display: flex;
+    margin: 5% 5%;
+    padding: 5% 5%;
+    gap: 8px;
+  
+  }
+nav ul { 
+  list-style: none;
+
+}
+ .img-siete{
+  display: none;
+}
+
+/* mq destok*/
+
+@media screen and (min-width: 1280px){
+  #tienda {
+      background-color: aqua;
+  }
+  .img-siete{
+    display: inline;
+  }
+
+  .contenedor{
+    width: 100%;
+  }
+}
+ 
+/*estilos productos*/
+
+ section div img{
    width: 100%;
    height: 100%;
 }
 
-section{
-margin: 35px 15px 0px 15px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
-
-}
-
-/*estilos productos*/
- 
-
-main .contenedor {
- margin: 0px 10px;
- padding: 10px;
+main section {
+ margin: 10% 10% 10% 10%;
+ padding: 10% 10% 10% 5%;
  gap: 10px;
-display: grid;
+ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr;
+
+}
+ 
+/* estilos servicios*/
+
+main ul{
+  list-style: none;
 }
 
-   main section ul{
+/*estilo de personal*/
 
-   list-style: none;
-   display: flex;
-   gap: 50px;
-   margin: 20px 10px;
- }
+
+
  
  
 
